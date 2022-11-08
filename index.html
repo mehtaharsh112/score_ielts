@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IELTS to PTE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        input {
+            background-color: #105263 !important;
+            color: whitesmoke !important;
+            font-weight: bold !important;
+        }
+
+        td,
+        th {
+            background-color: #212F4A !important;
+            color: #E2BC8D;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: whitesmoke !important;
+        }
+
+        body {
+            background-color: lavender;
+        }
+
+        .btn-one {
+            background-color: #003566;
+            color: #FAEAD8;
+        }
+
+        .btn-one:hover {
+            background-color: #E2CDA1;
+            color: #1D2436;
+        }
+
+        .btn-two {
+            background-color: royalblue;
+            color: peachpuff;
+        }
+
+        .btn-two:hover {
+            background-color: rgba(255, 0, 0, 0.548);
+            color: whitesmoke;
+        }
+
+        @media only screen and (min-width:992px) {
+            button {
+                width: 250px;
+            }
+
+            #np {
+                width: 300px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <marquee behavior="" direction="">
+        <p class="mb-0 bg-warning text-danger fw-bold fs-1 mt-5 text-center">This converter is presented by Harsh Mehta
+        </p>
+    </marquee>>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center mb-0 pb-5">Enter your PTE score</h1>
+            <div class="col-12 d-flex justify-content-center">
+                <input type="text" class="form-control" id="np" placeholder="Student Name">
+            </div>
+            <form action="" class="d-lg-flex justify-content-evenly py-5">
+                <div class="col-12 col-lg-2">
+                    <label for="exampleFormControlInput1" class="form-label">Listening</label>
+                    <input type="number" class="form-control" id="lp">
+                </div>
+                <div class="col-12 col-lg-2 my-5 my-lg-0">
+                    <label for="exampleFormControlInput1" class="form-label">Reading</label>
+                    <input type="number" class="form-control" id="rp">
+                </div>
+                <div class="col-12 col-lg-2">
+                    <label for="exampleFormControlInput1" class="form-label">Writing</label>
+                    <input type="number" class="form-control" id="wp">
+                </div>
+                <div class="col-12 col-lg-2 my-5 my-lg-0">
+                    <label for="exampleFormControlInput1" class="form-label">Speaking</label>
+                    <input type="number" class="form-control" id="sp">
+                </div>
+                <div class="col-12 col-lg-2">
+                    <label for="exampleFormControlInput1" class="form-label">Overall</label>
+                    <input type="number" class="form-control" id="op">
+                </div>
+            </form>
+            <div
+                class="button d-flex flex-lg-row flex-column justify-content-lg-evenly justify-content-center text-center">
+                <button type="button" class="btn-one btn fw-bold" onclick="return conv()">Check</button>
+                <button type="button" class="btn-two btn my-5 my-lg-0 fw-bold" onclick="return convrem()">Clear</button>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="ieq">
+            <h1 class="text-center mb-0 py-5">IELTS score equivalent to your PTE score</h1>
+            <table class="table table-bordered w-50">
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td id="in"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Listening</th>
+                        <td id="il"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Reading</th>
+                        <td id="ir"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Writing</th>
+                        <td id="iw"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Speaking</th>
+                        <td id="is"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Overall</th>
+                        <td id="io"></td>
+                    </tr>
+                    <!-- <tr>
+                    <th scope="row">Eligibility</th>
+                    <td id="eli"></td>
+                  </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <p class="mb-0 bg-warning text-danger fw-bold fs-1 mt-5 text-center">
+        HARSH MEHTA PRESENTS CONVERSION
+    </p>
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
